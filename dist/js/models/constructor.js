@@ -22,6 +22,18 @@ export class Pokemon {
         this.stats = stats;
     }
 }
+/* Isso foi eu tentando criar uma classe image para receber a url q eu por no movie.ts
+e ele aceitar, porém já tava quebrando a cabeça dms, e fui alertada que era só deixar realmente
+como string
+
+class Image{
+  url: string;
+  //url = "https://image.tmdb.org/t/p/w500/5YZbUmjbMa3ClvSW1Wj3D6XGolb.jpg";
+  constructor(url: string){
+    this.url = url;
+  }
+}
+*/
 export class Movie {
     constructor(adult, backdrop_path, id, original_language, original_title, overview, popularity, poster_path, release_date, title, video, vote_average, vote_count) {
         this.adult = adult;

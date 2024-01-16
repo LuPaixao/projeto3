@@ -1,7 +1,11 @@
 import { Pokemon } from "./models/constructor.js";
 const pokemonLista = [
-    new Pokemon(132, "Ditto", 101, 3, 40, false, new Date("2023-01-12"), [{ ability: "limber " }, { ability: "imposter " }], [{ base_stat: 48, stat: "hp" }, { base_stat: 48, stat: "attack" }, { base_stat: 48, stat: "defense" }])
+    new Pokemon(
+        132, "Ditto", 101, 3, 40, false, new Date("2023-01-12"), 
+        [{ ability: "limber " }, { ability: "imposter " }], 
+        [{ base_stat: 48, stat: "hp" }, { base_stat: 48, stat: "attack" }, { base_stat: 48, stat: "defense" }])
 ];
+
 function exibirPokemons() {
     pokemonLista.forEach(pokemon => {
         const pPokemonId = document.querySelector(`#pokemon_id`);
@@ -53,7 +57,7 @@ function exibirPokemons() {
         }
         /*
         //Isso aqui de case, é porque eu queria imprimir o valor a cada id que eu chamasse
-        //se eu chamar o idHpStat ele iria chamar o stat.stat hp, porém ver como mudar dps
+        //se eu chamar o idHpStat no html ele iria chamar o stat.stat hp, porém ver como mudar dps
     
         for (const pokemon of pokemonLista) {
           for (const stat of pokemon.stats) {

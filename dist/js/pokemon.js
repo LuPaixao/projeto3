@@ -53,7 +53,7 @@ function exibirPokemons() {
         }
         /*
         //Isso aqui de case, é porque eu queria imprimir o valor a cada id que eu chamasse
-        //se eu chamar o idHpStat ele iria chamar o stat.stat hp, porém ver como mudar dps
+        //se eu chamar o idHpStat no html ele iria chamar o stat.stat hp, porém ver como mudar dps
     
         for (const pokemon of pokemonLista) {
           for (const stat of pokemon.stats) {

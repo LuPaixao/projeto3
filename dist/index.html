@@ -9,73 +9,74 @@
     </head>
 
     <body class="container"><script id="__bs_script__">//<![CDATA[
-    document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.26.14'><\/script>".replace("HOST", location.hostname));
-//]]></script>
+    document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.26.14'><\/script>".replace("HOST", location.hostname));</script>
 
 
-        <div>
-            <ul>
-                <li>
-                    id: 
-                    <p id="pokemon_id"></p>
-                </li>
-                <li>
-                    name:
-                    <p id="pokemon_name"></p>
-                </li>
-                <li>
-                    experiência: 
-                    <p id="pokemon_base_experience"></p>
-                </li>
-                <li>
-                    altura:
-                    <p id="pokemon_height"></p>
-                </li>
-                <li>
-                    peso:
-                    <p id="pokemon_weight"></p>
-                </li>
-                <li>
-                    lendário:
-                    <p id="pokemon_legendary"></p>
-                </li>
-                <li>
-                    primeira aparição:
-                    <p id="pokemon_firstAppearance"></p>
-                </li>
-                <li>
-                    habilidades: 
-                    <p id="pokemon_ability"></p>
-                </li>
-                <li>
-                    hp:
-                    <p id="pokemon_stat_hp"></p>
-                </li>
-                <li>
-                    attack:
-                    <p id="pokemon_stat_attack"></p>
-                </li>
-                <li>
-                    defesa:
-                    <p id="pokemon_stat_defense"></p>
-                </li>
-            </ul>
-        </div>
-
+    <div>
         <table>
             <tr>
-              <th>Título</th>
-              <td>{{movie.title}}</td>
+                <th>id: </th>
+                <td id="pokemon_id"></td>
             </tr>
             <tr>
-              <th>Data de lançamento</th>
-              <td>{{movie.vid}}</td>
+                <th>name: </th>
+                <td id="pokemon_name"></td>
+            </tr>
+                <tr>
+                    <th>experiência: </th>
+                    <td id="pokemon_base_experience"></td>
+                </tr>
+                <tr>
+                    <th>altura: </th>
+                    <td id="pokemon_height"></td>
+                </tr>
+                <tr>
+                    <th>peso:</th>
+                    <td id="pokemon_weight"></td>
+                </tr>
+                <tr>
+                    <th>lendário: </th>
+                    <td id="pokemon_legendary"></td>
+                </tr>
+                <tr>
+                    <th>Aparição:</th>
+                    <td id="pokemon_firstAppearance"></td>
+                </tr>
+                <tr>
+                    <th>habilidades: </th>
+                    <td id="pokemon_ability"></td>
+                </tr>
+                <tr>
+                    <th>hp: </th>
+                    <td id="pokemon_stat_hp"></td>
+                </tr>
+                <tr>
+                    <th>attack:</th>
+                    <td id="pokemon_stat_attack"></td>
+                </tr>
+                <tr>
+                    <th>defesa:</th>
+                    <td id="pokemon_stat_defense"></td>
+                </tr>
+        </table>
+    </div>
+    <div>
+        <table>
+            <tr>
+              <th>Título: </th>
+              <td></td>
             </tr>
             <tr>
-              <th>Visão geral</th>
-              <td>{{filme.overview}}</td>
+              <th>Data de lançamento:</th>
+              <td></td>
             </tr>
-          </table>
+            <tr>
+              <th>Visão geral: </th>
+              <td></td>
+            </tr>
+        </table>
+    </div>
+        
 
     
         <script type="module" src="js/pokemon.js"></script>

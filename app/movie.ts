@@ -22,9 +22,23 @@ function exibirMovie(){
         const selectedMovie = movieLista.find(movie => movie.id === 447365);
         tdMovieBack.textContent = selectedMovie.backdrop_path;
 
-        const tdMokemonId = document.querySelector(`#movie_id`);
+        const tdMovieId = document.querySelector(`#movie_id`);
         const movieId = movie.id.toString();
-        tdMokemonId.textContent = movieId;
+        tdMovieId.textContent = movieId;
+
+        const tdMovieLan = document.querySelector(`#movie_language`);
+        const movieLan = movie.original_language;
+        tdMovieLan.textContent = movieLan;
+
+        const tdMovieTitle = document.querySelector(`#movie_title`);
+        const movieTitle = movie.title;
+        tdMovieTitle.textContent = movieTitle;
+
+        const tdMovieOverview = document.querySelector(`#movie_overview`);
+        const movieOverview = movie.overview;
+        tdMovieOverview.textContent = movieOverview;
+
+
 
 
     });

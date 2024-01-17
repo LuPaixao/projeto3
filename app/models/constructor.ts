@@ -50,3 +50,42 @@ export class Pokemon {
       public vote_count: number,
     ) {}
   }
+
+
+  class Names {
+    constructor (public common: string, public official: string) {}
+  }
+
+  class Latlngs{
+    constructor (public latlng: number){}
+  }
+  
+  class Borders{
+    constructor (public borders: string){}
+  }
+
+  class Timezones{
+    constructor (public timezones: string){}
+  }
+
+  class FLags{
+    constructor (public png: string, public svg: string){}
+  }
+
+  export class Pais {
+    constructor (
+      public name: Names[],
+      public independent: boolean,
+      public unMember: boolean,
+      public capital: string,
+      public region: string,
+      public subregion: string,
+      public languages: string,
+      public latlng: Latlngs[],
+      public borders: Borders[],
+      public area: number,
+      public population: number,
+      public timezones: Timezones[],
+      public flags : FLags[]
+    ){}
+  }

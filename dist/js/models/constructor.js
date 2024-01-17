@@ -51,3 +51,47 @@ export class Movie {
         this.vote_count = vote_count;
     }
 }
+class Names {
+    constructor(common, official) {
+        this.common = common;
+        this.official = official;
+    }
+}
+class Latlngs {
+    constructor(latlng) {
+        this.latlng = latlng;
+    }
+}
+class Borders {
+    constructor(borders) {
+        this.borders = borders;
+    }
+}
+class Timezones {
+    constructor(timezones) {
+        this.timezones = timezones;
+    }
+}
+class FLags {
+    constructor(png, svg) {
+        this.png = png;
+        this.svg = svg;
+    }
+}
+export class Pais {
+    constructor(name, independent, unMember, capital, region, subregion, languages, latlng, borders, area, population, timezones, flags) {
+        this.name = name;
+        this.independent = independent;
+        this.unMember = unMember;
+        this.capital = capital;
+        this.region = region;
+        this.subregion = subregion;
+        this.languages = languages;
+        this.latlng = latlng;
+        this.borders = borders;
+        this.area = area;
+        this.population = population;
+        this.timezones = timezones;
+        this.flags = flags;
+    }
+}

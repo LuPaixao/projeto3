@@ -73,14 +73,13 @@ class Timezones {
         this.timezone = timezone;
     }
 }
-class FLags {
-    constructor(png, svg) {
-        this.png = png;
-        this.svg = svg;
-    }
+/*
+class FLags{
+  constructor (public png: string, public svg: string){}
 }
+*/
 export class Pais {
-    constructor(name, independent, unMember, capital, region, subregion, languages, latlng, borders, area, population, timezone, flag) {
+    constructor(name, independent, unMember, capital, region, subregion, languages, latlng, borders, area, population, timezone, flagPng, flagSvg) {
         this.name = name;
         this.independent = independent;
         this.unMember = unMember;
@@ -93,6 +92,7 @@ export class Pais {
         this.area = area;
         this.population = population;
         this.timezone = timezone;
-        this.flag = flag;
+        this.flagPng = flagPng;
+        this.flagSvg = flagSvg;
     }
 }

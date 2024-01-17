@@ -68,9 +68,12 @@ export class Pokemon {
     constructor (public timezone: string){}
   }
 
+  /* 
   class FLags{
     constructor (public png: string, public svg: string){}
   }
+  */
+ 
 
   export class Pais {
     constructor (
@@ -86,6 +89,7 @@ export class Pokemon {
       public area: number,
       public population: number,
       public timezone: Timezones[],
-      public flag: FLags[]
+      public flagPng: string,
+      public flagSvg: string
     ){}
   }

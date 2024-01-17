@@ -6,8 +6,8 @@ const paisLista = [
         "Americas", "South America", "Portuguese", 
         [{ latlng1: -10, latlng2: -55}],
         [{ borders: "ARG, BOL, COL, GUF, GUY, PRY, PER, SUR, URY, VEN"}],
-        8515767, 212559409, [{ timezone: "UTC-05:00, UTC-03:00, UTC-02:00"}],
-        [{ png: "https://flagcdn.com/w320/br.png", svg: "https://flagcdn.com/br.svg"}]
+        8515767, 212559409, [{ timezone: "UTC-05:00, UTC-03:00, UTC-02:00"}], 
+        "https://flagcdn.com/w320/br.png", "https://flagcdn.com/br.svg"
     )   
 ]
 
@@ -92,18 +92,20 @@ function exibirPais(){
             }
         }
 
-        const tdPaisFlagPng = document.querySelector(`#pais_flag_png`);
-        for (const pais of paisLista) {
-            for (const png of pais.flag){
-                tdPaisFlagPng.textContent = png.png;
-            }
-        }
-        const tdPaisFlagSvg = document.querySelector(`#pais_flag_svg`);
-        for (const pais of paisLista) {
-            for (const svg of pais.flag){
-                tdPaisFlagSvg.textContent = svg.svg;
-            }
-        }
+        const tdPaisFlagPng = document.getElementById("pais_flag_png");
+        const paisFlagPng = paisLista.find(pais => pais.capital === "Brasilia");
+        tdPaisFlagPng.textContent = paisFlagPng.flagPng;
+
+        const tdPaisFlagSvg = document.getElementById("pais_flag_svg");
+        const paisFlagSvg = paisLista.find(pais => pais.capital === "Brasilia");
+        tdPaisFlagSvg.textContent = paisFlagSvg.flagSvg;
+
+        /* Imprimir a bandeira do Brasil
+        const selectedMovie = paisLista.find(pais => pais.capital === "Brasilia");
+        const img = document.createElement("img");
+        img.src = selectedMovie.flagPng;
+        document.body.appendChild(img);
+        */
 
     });
 }

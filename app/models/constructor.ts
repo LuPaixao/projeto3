@@ -57,7 +57,7 @@ export class Pokemon {
   }
 
   class Latlngs{
-    constructor (public latlng: number){}
+    constructor (public latlng1: number, public latlng2: number){}
   }
   
   class Borders{
@@ -65,7 +65,7 @@ export class Pokemon {
   }
 
   class Timezones{
-    constructor (public timezones: string){}
+    constructor (public timezone: string){}
   }
 
   class FLags{
@@ -85,7 +85,7 @@ export class Pokemon {
       public borders: Borders[],
       public area: number,
       public population: number,
-      public timezones: Timezones[],
-      public flags : FLags[]
+      public timezone: Timezones[],
+      public flag: FLags[]
     ){}
   }

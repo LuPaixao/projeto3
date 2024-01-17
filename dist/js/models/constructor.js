@@ -58,8 +58,9 @@ class Names {
     }
 }
 class Latlngs {
-    constructor(latlng) {
-        this.latlng = latlng;
+    constructor(latlng1, latlng2) {
+        this.latlng1 = latlng1;
+        this.latlng2 = latlng2;
     }
 }
 class Borders {
@@ -68,8 +69,8 @@ class Borders {
     }
 }
 class Timezones {
-    constructor(timezones) {
-        this.timezones = timezones;
+    constructor(timezone) {
+        this.timezone = timezone;
     }
 }
 class FLags {
@@ -79,7 +80,7 @@ class FLags {
     }
 }
 export class Pais {
-    constructor(name, independent, unMember, capital, region, subregion, languages, latlng, borders, area, population, timezones, flags) {
+    constructor(name, independent, unMember, capital, region, subregion, languages, latlng, borders, area, population, timezone, flag) {
         this.name = name;
         this.independent = independent;
         this.unMember = unMember;
@@ -91,7 +92,7 @@ export class Pais {
         this.borders = borders;
         this.area = area;
         this.population = population;
-        this.timezones = timezones;
-        this.flags = flags;
+        this.timezone = timezone;
+        this.flag = flag;
     }
 }

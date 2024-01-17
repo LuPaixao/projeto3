@@ -18,12 +18,35 @@ function exibirMovie() {
         const tdMovieLan = document.querySelector(`#movie_language`);
         const movieLan = movie.original_language;
         tdMovieLan.textContent = movieLan;
-        const tdMovieTitle = document.querySelector(`#movie_title`);
-        const movieTitle = movie.title;
-        tdMovieTitle.textContent = movieTitle;
+        const tdMovieOriginalTitle = document.querySelector(`#movie_original_title`);
+        const movieOriginalTitle = movie.original_title;
+        tdMovieOriginalTitle.textContent = movieOriginalTitle;
         const tdMovieOverview = document.querySelector(`#movie_overview`);
         const movieOverview = movie.overview;
         tdMovieOverview.textContent = movieOverview;
+        const tdMoviePopularity = document.querySelector(`#movie_popularity`);
+        const moviePopularity = movie.popularity.toString();
+        tdMoviePopularity.textContent = moviePopularity;
+        const tdMoviePoster = document.getElementById("movie_poster");
+        const moviePoster = movieLista.find(movie => movie.id === 447365);
+        tdMoviePoster.textContent = moviePoster.poster_path;
+        const tdMovieDate = document.querySelector(`#movie_date`);
+        const movieDate = movie.release_date.toLocaleDateString();
+        tdMovieDate.textContent = movieDate;
+        const tdMovieTitle = document.querySelector(`#movie_title`);
+        const movieTitle = movie.title;
+        tdMovieTitle.textContent = movieTitle;
+        const tdMovieVideo = document.querySelector('#movie_video');
+        for (const movie of movieLista) {
+            const movieVideo = movie.video;
+            tdMovieVideo.innerHTML = movieVideo.toString();
+        }
+        const tdMovieAverage = document.querySelector(`#movie_average`);
+        const movieAverage = movie.vote_average.toString();
+        tdMovieAverage.textContent = movieAverage;
+        const tdMovieCount = document.querySelector(`#movie_count`);
+        const movieCount = movie.vote_count.toString();
+        tdMovieCount.textContent = movieCount;
     });
 }
 window.addEventListener('DOMContentLoaded', exibirMovie);

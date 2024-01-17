@@ -37,6 +37,7 @@ function exibirPokemons() {
         const pPokemonFA = document.querySelector(`#pokemon_firstAppearance`);
         const pokemonFirstAppearance = pokemon.firstAppearance.toLocaleDateString();
         pPokemonFA.textContent = pokemonFirstAppearance;
+        
         const pPokemonAbility = document.querySelector('#pokemon_ability');
         for (const pokemon of pokemonLista) {
             for (const ability of pokemon.abilities) {

@@ -9,3 +9,24 @@ const movieLista = [
         new Date("2023-05-03"), "Guardians of the Galaxy Vol. 3", false, 8.1, 3154)
 ]
 
+function exibirMovie(){
+    movieLista.forEach(movie =>{
+
+        const tdMovieAdult = document.querySelector('#movie_adult');
+        for (const movie of movieLista) {
+            const movieAdult = movie.adult;
+            tdMovieAdult.innerHTML = movieAdult.toString();
+        }
+
+        const tdMovieBack = document.getElementById("movie_back");
+        const selectedMovie = movieLista.find(movie => movie.id === 447365);
+        tdMovieBack.textContent = selectedMovie.backdrop_path;
+
+        const tdMokemonId = document.querySelector(`#movie_id`);
+        const movieId = movie.id.toString();
+        tdMokemonId.textContent = movieId;
+
+
+    });
+}
+window.addEventListener('DOMContentLoaded', exibirMovie);

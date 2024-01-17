@@ -65,31 +65,6 @@ function exibirPokemons() {
                 pPokemonStat_defense.textContent = stat.base_stat.toString();
             }
         }
-        /*
-        //Isso aqui de case, é porque eu queria imprimir o valor a cada id que eu chamasse
-        //se eu chamar o idHpStat no html ele iria chamar o stat.stat hp, porém ver como mudar dps
-    
-        for (const pokemon of pokemonLista) {
-          for (const stat of pokemon.stats) {
-            switch (stat.stat) {
-              case 'hp':
-                const liItem_hp = document.createElement('p');
-                liItem_hp.textContent = stat.base_stat.toString();
-                pPokemonStat.appendChild(liItem_hp);
-                break;
-              case 'attack':
-                const liItem_at = document.createElement('li');
-                liItem_at.textContent = stat.base_stat.toString();
-                ulista.appendChild(liItem_at);
-                break;
-              case 'defense':
-                const liItem_de = document.createElement('li');
-                liItem_de.textContent = stat.base_stat.toString();
-                ulista.appendChild(liItem_de);
-                break;
-              default:
-                break;
-                */
     });
 }
 window.addEventListener('DOMContentLoaded', exibirPokemons);
